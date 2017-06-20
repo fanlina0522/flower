@@ -1,0 +1,38 @@
+.amendPsw{
+	height: 100%;
+    background: #efeff4;
+}
+
+.ui-btn-wrap {
+    margin: 16px 10px 10px;
+}
+
+.ui-btn-full {
+    width: 100%;
+    padding: 0;
+}
+
+.ui-btn-lg {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+.ui-btn-main {
+    padding: 0 13px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ca0e25;
+	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: 0 none;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+}

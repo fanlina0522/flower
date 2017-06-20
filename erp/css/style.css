@@ -1,0 +1,609 @@
+
+@charset "utf-8";
+/* CSS Document */
+/* ================================= From network ==================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, figcaption, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video, main, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: Microsoft YaHei;
+  height: 100%;
+  -webkit-text-size-adjust:none;
+  background: #fffff0;
+}
+ul { list-style: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.curp { cursor: pointer; }
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+img {
+  border: 0;
+}
+input {
+  vertical-align: middle;
+}
+
+
+@media screen and (min-width: 320px){
+    html{
+      font-size:16px;
+    }
+}
+@media screen and (min-width: 650px){
+    html{
+      font-size:20px;
+    }
+}
+@media screen and (min-width:991px){
+    html{
+      font-size:21px;
+    }
+}
+
+/*头部*/
+.layui-header{
+    border-bottom-color: #1AA094;
+    background-color: #fff;
+    border-bottom: 5px solid #1AA094;
+    position:relative;
+    z-index: 1000;
+}
+.layui-main {
+    width: auto;
+    margin: 0 15px;
+}
+.admin-login-box {
+    width: 185px;
+    height: 70px;
+    position: relative;
+}
+.admin-login-box span{
+ font-size: 22px;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 18px;
+}
+.admin-side-toggle {
+    position: absolute;
+    cursor: pointer;
+    z-index: 19940201;
+    left: 200px;
+    color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #1AA094;
+    line-height: 30px;
+    top: 25%;
+}
+.admin-header-item{
+  position: absolute;
+  top:0;
+  right: 10px;
+}
+.layui-nav-item{
+  float: left;
+      margin: 0 10px;
+    line-height: 70px;
+}
+.layui-nav-item a{
+    display: block;
+    padding: 0 20px;
+    color: #524e4e;
+}
+.layui-nav-item a:hover{
+    color: #1AA094;
+}
+.admin-header-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.layui-nav .layui-nav-more {
+   content: '';
+    width: 0;
+    height: 0;
+    border-style: solid dashed dashed;
+    border-color: #c2c2c2 transparent transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    position: absolute;
+    top: 28px;
+    right: 3px;
+    border-width: 6px;
+        top: 33px;
+}
+.layui-nav-child {
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 75px;
+    line-height: 36px;
+    padding: 5px 0;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+.layui-nav-child dd {
+    position: relative;
+}
+.layui-nav-child dd a {
+    color: #999;
+    font-size: 13px;
+}
+/*右边*/
+.jt-main{
+    top: 70px;
+    width: 200px;
+    overflow-x: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: #393D49;
+    color: #c2c2c2;
+}
+.jt-side-scroll {
+    width: 220px;
+    height: 100%;
+    overflow-x: hidden;
+}
+.jt-nav-tree {
+    width: 200px;
+    padding: 0;
+}
+.jt-nav-tree .jt-nav-item {
+  position: relative;
+    display: block;
+    width: 100%;
+    line-height: 45px;
+}
+.jt-nav-tree .jt-nav-item a {
+    height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+        display: block;
+    padding: 0 20px;
+    color: #c2c2c2;
+}
+.jt-nav-tree .jt-nav-item a:hover {
+
+    color: #1AA094;
+}
+.jt-nav-item a cite {
+    padding: 0 10px;
+    font-style: normal;
+}
+ .jt-nav-more {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid dashed dashed;
+    border-color: #c2c2c2 transparent transparent;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 28px;
+    right: 3px;
+    border-width: 6px;
+    top: 20px;
+    right: 10px;
+}
+.jt-nav-child {
+    display: block;
+    padding: 0;
+     position: relative;
+    z-index: 0;
+    top: 0;
+    border: none;
+    box-shadow: none;
+    background: 0 0;
+    color: #fff;
+}
+.jt-nav-child dd {
+    position: relative;
+}
+.jt-nav-tree .jt-nav-child a {
+    height: 40px;
+    line-height: 40px;
+    color: #c2c2c2;
+        padding-left: 30px;
+            text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+        display: block;
+    padding: 0 40px;
+}
+
+.jt-nav-item a cite {
+    padding: 0 10px;
+}
+
+
+/*右边*/
+.layui-body {
+     display: block;
+    position: absolute;
+    left: 200px;
+    right: 0;
+       top: 70px;
+    bottom: 0;
+    border-left: solid 2px #1AA094;
+    z-index: 998;
+    width: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.layui-tab-brief {
+    border: 0;
+    margin: 0;
+    box-shadow: none;
+        overflow: hidden;
+    text-align: left!important;
+}
+.layui-tab-brief>.layui-tab-title {
+    border-bottom: 1px solid #1AA094;
+        position: relative;
+    left: 0;
+    height: 40px;
+    white-space: nowrap;
+    font-size: 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+.layui-tab-brief .layui-tab-title .layui-this {
+    color: white;
+    background-color: #1AA094;
+        font-size: 14px;
+    position: relative;
+    line-height: 40px;
+    min-width: 65px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 7%;
+        display: inline-block;
+    vertical-align: middle;
+}
+.layui-tab-title li .layui-tab-close {
+    position: relative;
+    margin-left: 3px;
+    top: 1px;
+    font-style: normal;
+    font-size:17px;
+}
+
+/*中间表格*/
+.admin-main {
+    margin: 15px;
+
+}
+.layui-elem-quote {
+    margin-bottom: 10px;
+    padding: 15px;
+    line-height: 22px;
+    border-left: 5px solid #009688;
+    border-radius: 0 2px 2px 0;
+    background-color: #f2f2f2;
+}
+.layui-btn-small {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.layui-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+.layui-btn .layui-icon {
+    font-size: 18px;
+    vertical-align: bottom;
+   font-size: 16px!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.layui-btn+.layui-btn {
+    margin-left: 10px;
+}
+.layui-btn-small {
+    height: 30px;
+    line-height: 28px;
+    padding: 0 8px;
+    font-size: 12px;
+}
+.layui-elem-field {
+    margin-bottom: 10px;
+    padding: 0;
+    border: 1px solid #e2e2e2;
+}
+
+.show_input{
+    display: none;
+    padding-left: 2px;
+}
+
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+.layui-elem-field legend {
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.layui-field-box {
+    padding: 10px 15px;
+}
+.site-table {
+    width: 100%;
+    margin: 10px 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.site-table thead {
+    background-color: #f2f2f2;
+}
+.site-table th, .site-table td {
+    padding: 6px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    width: 8%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+}
+tbody tr{
+background-color: rgb(238, 238, 238);
+
+}
+.site-table tbody tr td {
+    text-align: center;
+      width: 8%;
+
+}
+.yulan_btn{
+    display: inline-block;
+     height: 33px;
+    line-height: 33px;
+    padding: 0 11px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+}
+
+/*详情页*/
+.page-container {
+     display: none;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    border-left: solid 2px #1AA094;
+    z-index: 998;
+    width: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+        padding: 20px;
+}
+.form .row {
+    box-sizing: border-box;
+    margin: 15px 0 30px -15px; 
+}
+.formControls_p{
+    display: none;
+    font-size: 8px;
+    color: #dc190d;
+    margin-left:5px; 
+}
+.form-horizontal .form-label {
+    margin-top: 3px;
+    cursor: text;
+    text-align: right;
+    display: block;
+    color: #555;
+    width: 16.4%;
+    float: left;
+}
+.formControls {
+    margin-left:8px; 
+        width: 75%;
+        float: left;
+}
+.input-text, .textarea {
+    box-sizing: border-box;
+    border: solid 1px #ddd;
+    width: 100%;
+    padding: 0px 5px;
+    vertical-align: middle;
+    height:31px;
+}
+
+.feilei{
+    border: 1px solid #eee;
+}
+.feilei p{
+    padding: 20px;
+    color: #af7676;
+    margin-left:10px; 
+}
+.yongtu input{
+  width: 14%;
+}
+.duixiang input{
+    width: 15%;
+}
+.huacai{
+    margin-left:49px;  
+}
+.yangse,.leixin,.jiage{
+    margin-left:49px;
+    margin-bottom:15px;   
+}
+.num input{
+    width: 21%;
+}
+.form_img{
+    margin-left:100px; 
+}
+.big_img input{
+border: 1px solid #eee;
+}
+.form_img span,.form_img input{
+  color: #555;
+}
+.form_img img{
+    padding-top:10px;
+    margin-left:76px;
+    border: 1px solid #eee;
+    font-size: 10px;
+    text-align: center;  
+}
+.un_img{
+    display: none;
+}
+.form_img .xiao_img{
+  margin-top:25px; 
+}
+.un_img img:nth-child(2){
+  margin-left:30px;
+}
+.xiao_img input:nth-child(2),.details_img input:nth-child(2){
+  margin:0;
+}
+.xiao_img input,.details_img input{
+  margin: 22px 0 30px 79px;
+  border: 1px solid #eee;
+}
+.img_button{
+    margin-left:79px; 
+}
+
+.btn-primary,.btn-update{
+     margin-top:40px; 
+    margin-left:350px; 
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-success{
+    margin-top:40px; 
+ margin-left:50px; 
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.loading{
+    z-index: 9999;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:#009688;
+    font-size: 50px;
+    -webkit-animation:circle 2s infinite linear;
+}
+
+@-webkit-keyframes circle{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+/*-----------------------------------*/
+

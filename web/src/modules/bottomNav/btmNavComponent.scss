@@ -1,0 +1,20 @@
+
+#footer{
+	height:47px;
+	border-top:1px solid #ccc;
+	ul{
+		display:flex;
+		.bottomActive{
+			color:#ca0e25;
+		}
+		li{
+			width:25%;
+			color:#2F3C51;
+			text-align: center;
+			i{
+				display: block;
+				font-size:20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+.scroll-wrap {
+    position: relative;
+    display: block;
+    width: .1px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.address-card {
+    padding: 0 10px;
+    margin-bottom: 5px;
+
+    .bd {
+	    position: relative;
+	    padding: 12px 0 7px;
+
+	    .tit {
+		    margin-bottom: 5px;
+		    font-size: 15px;
+		    color: #444;
+		}
+
+		.name {
+		    margin-right: 5px;
+		}
+
+		.desc {
+		    color: #888;
+		    font-size: 14px;
+		    line-height: 1.5;
+		}
+	}
+
+	.ft {
+	    border-top: 1px dashed #d7d7d7;
+	    height: 41px;
+	    line-height: 40px;
+	    font-size: 14px;
+	    color: #666;
+
+	    .ui-checkbox {
+
+	    	input {
+			    margin-right: 5px;
+			    font-size: 18px;
+			}
+	    }
+	}
+}
+
+.ui-box {
+    position: relative;
+    background-color: #fff;
+}
+
+.ui-box:before, .ui-box:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    pointer-events: none;
+    z-index: 9;
+}
+
+.ui-checkbox {
+    display: block;
+
+    input {
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: top;
+	    height: 1px;
+	    line-height: inherit;
+	    font-size: 22px;
+	    border: 0;
+	    outline: 0 !important;
+	    background: none;
+	    -webkit-appearance: none;
+	}
+
+
+	.icon-gx:checked:before { content: "\e623";color:#ca0e25 }
+	
+	.icon-gx:before { content: "\e623"; }
+	
+	.icon-gx1:checked:before { content: "\e74b";color:#ca0e25 }
+
+	.icon-gx1:before { content: "\e74b"; }
+
+}
+
+.ad-name{
+	font-size: 16px;
+	color:#000;
+}
+
+.ad-phone{
+    color: #f00;
+    font-size: 16px;
+}
+
+.ad-amend{
+	float:right
+}
+
+.ad-action{
+	flex:1
+}

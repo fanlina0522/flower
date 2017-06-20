@@ -1,0 +1,37 @@
+.consumer{
+	height: 100%;
+	background:  #f4f4f4;
+}
+
+.wallet-ac {
+    padding: 15px 10px 20px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+
+    .price {
+	    margin-top: 5px;
+	    color: #ca0e25;
+
+	    .num {
+	    	font-size: 18px;
+		}
+
+	}
+}
+
+.ui-box {
+    position: relative;
+    background-color: #fff;
+}
+
+.ui-box:before, .ui-box:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    pointer-events: none;
+    z-index: 9;
+}

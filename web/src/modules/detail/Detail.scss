@@ -1,0 +1,236 @@
+@import '../../static/styles/common.scss';
+#app,#root{
+    height:100%;
+}
+.detail-container{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    position:relative;
+    .detail-main{
+        flex:1;
+        overflow-y: auto;
+        overflow-x:hidden;
+        .detail-lbt{
+           height:355.55px;
+            width:100%;
+            >img{
+                height:100%;
+                width:100%;
+            }
+        }
+        .detail-goodsmsg{
+            padding-left:10px;
+            width:100%;
+            height:66px;
+            >div{
+                line-height:30px;
+            }
+            .detail-goodsname{
+                position: relative;
+                font-size: 14px;
+                .detail-goodsid{
+                    position: absolute;
+                    right:10px;
+                    padding-right:10px;
+                    font-size: 13px;
+                    color: #999;
+                }
+            }
+            .detail-goodsprice{
+                font-size: 14px;
+                >span{
+                    font-size: 20px;
+                    color:#ca0e25;
+                }
+                >span::before{
+                    content: '￥';
+                }
+            }
+        }
+        .detail-goodsqty{
+            padding: 10px 5px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            color: #999;
+            .detail-btn-box{
+                display: inline-block;
+                border:1px solid #aaa;
+                border-radius: 3px;
+                height:34px;
+                box-sizing:border-box;
+                margin-bottom: 4px;
+                >input{
+                    outline: 0;
+                    border:0;
+                    width:60px;
+                    height:32px !important;
+                    text-align: center;
+                }
+                >button{
+                    border:0;
+                    left: 0px;
+                    height:32px;
+                    width:32px;
+                    background-color: #eee;
+                }
+                .detail-btn-minus{
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    border-right:1px solid #aaa;
+                }
+                .detail-btn-plus{
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border-left:1px solid #aaa;
+                }
+            }
+        }
+        .detail-tab{
+            height:46px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            font-size: 14px;
+            >div{
+                flex:1;
+                text-align: center;
+                line-height: 46px;
+                border-right:1px solid #d7d7d7;
+                &:nth-of-type(3){
+                    border-right: 0;
+                }
+            }
+        }
+        .detail_active_color{
+            color:#ca0e25;
+            border-bottom: 2px solid #ca0e25;
+        }
+        .detail-content{
+            .detail-goodsdetail{
+                .detail-msg{
+                    height:268px;
+                    margin:0 10px;
+                    .detail-item{
+                        padding: 7px 0;
+                        overflow: hidden;
+                        line-height: 20px;
+                        border-bottom: 1px dotted #ccc;
+                        .k{
+                            float: left;
+                            width: 50px;
+                            color: #8a8a8a;
+                        }
+                        .v{
+                            margin-left: 50px;
+                            color: #444;
+                        }
+                    }
+                }
+                .detail-guess{
+                    h4{
+                        padding-left:6%;
+                        font-weight: normal;
+                        color:#444;
+                    }
+                    .detail-list{
+                        padding:0 5px;
+                        >li{
+                            float:left;
+                            width:47%;
+                            margin:3px;
+                            line-height: 25px;
+                            text-align: center;
+                            >img{
+                                width:80%;
+                            }
+                            .detail-flower{
+                                text-align: left;
+                                padding-left:10px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow:ellipsis ;
+                            }
+                            .detail-flowerPrice{
+                                text-align: left;
+                                color:#ca0e25;
+                                padding-left:10px;
+                            }
+                            .detail-flowerPrice::before{
+                                content: '￥';
+                            }
+                        }
+                    }
+                }
+            }
+            .detail-apprise{
+                display: none;
+                height:1000px;
+                padding-left:10px;
+                .apprise-list{
+                    >li{
+                        line-height: 30px;
+                        position: relative;
+                        margin:10px 0;
+                        .apprise-peoplemsg{
+                            color:#066dcc;
+                            .apprise-status{
+                                margin-left:10px;
+                                padding-left:10px;
+                                border-left:1px solid #aaa;
+                                color:#ca0e25;
+                            }
+                            .apprise-time{
+                                position: absolute;
+                                right:10px;
+                                color:#aaa;
+                            }
+                        }
+                    }
+                }
+}
+
+            .detail-answer{
+                display: none;
+                .detail-flowerasw{
+                    padding:0 10px;
+                    .mui-media-body{
+                        line-height:20px;
+                        .ask{
+                            line-height: 30px;
+                            color: #ca0e25;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detail-footer{
+        height:46px;
+        display:flex;
+        text-align: center;
+        line-height: 46px;
+        .detail-countPrice{
+            width:40%;
+            text-align: left;
+            padding-left:10px;
+            .detail-totalPrice{
+                color:#ca0e25;
+                font-size: 16px;
+            }
+        }
+        .detail-incar{
+            width:30%;
+            color: #ffffff;
+            background-color: #ff9500;
+        }
+        .detail-buy{
+            width:30%;
+            color: #ffffff;
+            background-color: #ca0e25;
+        }
+    }
+
+
+
+}

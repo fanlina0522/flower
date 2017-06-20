@@ -1,0 +1,181 @@
+
+
+#headerPop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+#headerPop .headerWarp {
+  position: absolute;
+  left: 0;
+  right: 0; }
+#headerPop .headerWarp .iconWarp {
+  position: relative;
+  height:44px;
+  background: #ca0e25;
+  line-height: 44px; }
+  #headerPop .iconWarp .iconWarp-left{
+    float: left;
+    padding-left:3px;
+    height: 100%;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  #headerPop .iconWarp .iconWarp-left span{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    margin: 12px 0 0 2px;
+   background: url(../../../src/static/imgs/login/back.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+  }
+   #headerPop .iconWarp .title{
+     height:44px;
+      line-height: 44px; 
+     font-weight: normal;
+    text-align: center;
+    font-size:15px;
+    color: #fff;
+     margin-right:22px; 
+       margin-top:0px; 
+  }
+  .login_bg {
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    background: #fffff0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+.login{
+  .login_bg form {
+
+    width: 80%;
+    margin: 110px auto;
+    text-align: left;
+}
+.login_bg  form div.userName,.login_bg  form div.passWord {
+    border: 1px solid #ca0e25;
+    padding: 0.3125rem 0 0.3125rem 3%;
+    height: 48px;
+    background: #ffffff; 
+}
+.login_bg form div.userName {
+    border-bottom: 0;
+    -webkit-border-top-left-radius: 0.45em;
+    -webkit-border-top-right-radius: 0.45em;
+    -moz-border-radius-topleft: 0.45em;
+    -moz-border-radius-topright: 0.45em;
+    border-top-left-radius: 0.45em;
+    border-top-right-radius: 0.45em;
+    margin-bottom:1.5625rem; 
+
+}
+.login_bg form .lable{
+  height: 45px;
+  line-height: 39px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login_bg form div.userName input,.login_bg  form div.passWord input {
+    width: 68%;
+    height:30px;
+    line-height: 27px;
+      border: none;
+    font-size:0.75rem;
+outline:none;
+
+}
+
+
+.login_bg  form div.userName,.login_bg  form div.passWord {
+    border: 1px solid #e0928f;
+    height: 48px;
+    background: #fff;
+}
+.choose_box {
+    height: 4.5em;
+    line-height: 4.5em;
+    padding: 0 5px;
+    margin: 10px auto;
+}
+.choose_box div {
+    float: left;
+}
+.choose_box a {
+    float: right;
+    color: #000;
+}
+.login_btn {
+    width: 90%;
+    display: block;
+    padding: 3% 0;
+    background: #ca0e25;
+    font-size: 1em;
+    font-family: "Microsoft YaHei";
+    color: #efeff4;
+    border: 1px solid #ca0e25;
+    text-align: center;
+    border-radius:40px;
+    margin-left:1.15rem; 
+}
+}
+
+
+.choose_box lable{
+  padding-bottom:4px;
+
+}
+.other_login {
+    width: 80%;
+    height: 15px;
+    position: absolute;
+    top: 60%;
+    margin: 0 10%;
+}
+.other_login .other {
+    width: 28%;
+    height: 8px;
+    border-bottom: 1px solid #2f2c59;
+}
+.other_login .other, .other_login span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.other_login span {
+    width: 40%;
+    font-size: 0.875rem;
+}
+.other_login .other {
+    width: 28%;
+    height: 8px;
+    border-bottom: 1px solid #2f2c59;
+}
+.other_choose {
+    width: 74%;
+    top: 70%;
+    position: absolute;
+    margin: 0 13%;
+}
+.login_bg .other_choose a {
+    display: block;
+    float: left;
+    position: absolute;
+}
+.other_choose a img {
+    width: 90%;
+    padding: 14% 0;
+}
+.other_choose a:nth-child(2) {
+    left: 42%;
+}
+.other_choose a:nth-child(3) {
+    left: 80%;
+}

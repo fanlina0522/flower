@@ -1,0 +1,157 @@
+@import "../../static/styles/common.scss";
+// @import "./FilterComponent.scss";
+
+
+body{
+	background:#fff;
+}
+#app{
+	height: 100%;
+	width: 100%;	
+	>div[data-reactroot]{
+        width: 100%;
+        height: 100%;
+    }
+}
+body,html{
+	height: 100%;
+	width: 100%;	
+	margin:0 auto;
+}
+.goods{
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	width:100%;
+	background:#fff;
+	.top{
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		z-index:100;
+		top:0;
+		min-height:138px;
+		position:relative;		
+		.toptitle{
+			background-color: #fff;
+			border-bottom: 1px solid #D7D7D7;
+			.goods_spray{
+				height: 40px;
+				padding: 9px 7px 4px ;
+				margin:0;
+				font-size:15px;
+				color: #666;
+			}
+			p{
+				height: 20px;
+				padding: 10px 7px 4px ;
+				margin:0;
+			}
+		}
+		.asidetitle{
+			height:54px;
+			padding:10px;
+			background:#f4f4f4;
+			section{
+				height:34px;
+				width:100%;
+				border:1px solid #ca0e25;
+				border-radius: 3px;
+				a{
+					display:inline-block;
+					font-size:13px;
+					text-align: center;
+					line-height:33px;
+					width:25%;
+					color:#666;
+					position:relative;
+					i{
+						margin:0;
+						padding:0;
+						font-size: 18px;
+						position:absolute;
+						transition:all 0.5s;
+					}
+					.takeicon{
+						transform: rotateZ(180deg);
+					}
+				}
+				.onactive{
+				    color: #fff;
+					background-color: #ca0e25;
+				}
+			}
+		}		
+	}
+	.goodsmain{
+		-webkit-flex:1;
+		-moz-flex:1;
+		-o-flex:1;
+		flex:1;
+		overflow-x:hidden; 
+		overflow-y:auto;
+		// position:relative;
+	    width: 100%;
+		.content{
+			z-index: 1;
+    		width: 100%;
+			background:#fff;
+			box-sizing:border-box;
+			ul{
+				width:100%;
+				background:#fff;
+				padding: 9px 5px 0;
+				box-sizing:border-box;
+				li{
+					width:50%;
+					padding: 0 5px 9px;
+					float:left;
+					text-align: center;
+					box-sizing:border-box;
+					// background:#fff;
+					div{
+						padding-bottom: 111.111111%;
+					    background-repeat: no-repeat;
+					    background-position: center;
+					    -webkit-background-size: 100% auto;
+					    background-size: 100% auto;
+					}
+					p{margin:0;}
+					.name{
+						padding-top:4px;
+						height: 44px;
+					    font-size: 14px;
+					    line-height: 20px;
+					    color: #444;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    // display: -webkit-box;
+					}
+					a{
+						display: block;
+						color:#000;
+						border:1px solid #f4f4f4;
+						.price{
+							color:#ca0e25;
+							overflow: hidden;
+    						line-height: 22px;
+						}
+					}
+					
+				}
+			}
+		}
+		.gooda_tip{
+			width:100%;
+			height:38px;
+			text-align: center;
+			line-height:18px;
+			padding-bottom: 20px;
+			font-size:14px;
+			a{
+				color:#666;
+			}
+		}
+	}
+}

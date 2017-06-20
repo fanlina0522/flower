@@ -1,0 +1,48 @@
+#header{
+	height:50px;
+	width: 100%;
+	background: #ca0e25;
+	line-height:40px;
+
+	.logo{
+		font-size:30px;
+		color:#fff;
+		margin-left:5%;
+	}
+	.logoName{
+		font-size:16px;
+		color:#fff;
+		margin-left:1%;
+	}
+	.sch-box{
+		line-height:30px;
+		display:inline-block;
+		margin-left:5%;
+		background:#d85565;
+		color:#f4d0d6;
+		height: 30px;
+		margin-top:10px;
+		border-radius:100px;
+
+		.serchBtn{
+			margin-left:10px;
+			font-size:16px;
+			color:#f4d0d6;
+		}
+		.schinput{
+			height: 30px;
+			width: 150px;
+			padding:0 10px;
+			background: transparent;
+			border:none;
+			color:#f4d0d6;
+			text-align:left;
+			margin-left:15px;
+		}
+		.schinput::-webkit-input-placeholder{
+			color:#f4d0d6;
+			font-size:12px;
+			line-height:50px;
+		}
+	}
+}

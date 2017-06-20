@@ -1,0 +1,14 @@
+前端：web
+
+启动： npm start/node server/打开数据库
+
+数据库导入：mongoimport -d flower  -c flower 路径（doc\mongodb\sql.dat）
+_______________________________________________________________________________________________________________________
+
+后台：erp/erp2
+
+启动：erp/api/     node server
+
+说明：erp使用jq实现
+	
+      erp2 使用react,部分完成

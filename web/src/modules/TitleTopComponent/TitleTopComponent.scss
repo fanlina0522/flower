@@ -1,0 +1,47 @@
+.titletop{
+	position: relative;
+	.goBottom{
+		width:100%;
+		position:absolute;
+		top:45px;
+		border-bottom: 1px solid #D7D7D7;
+		z-index:100;
+		transition:all 0.5s;
+		li{
+			width:25%;			
+			text-align: center;
+			a{
+				// color:#2F3C51;
+				color:#999;
+			}
+			i{
+				display: inline-block;
+				height:0;
+				font-size:22px;
+			}
+		}
+	}	
+}
+.detail-top{
+	z-index:1000;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+    background:#ca0e25;
+	color:#fff;
+    span{
+    	font-size: 16px;
+    }
+    .icon-jiantou-copy{
+        position: absolute;
+        left:10px;
+    }
+    .detail-daohang{
+        position: absolute;
+        right:20px;
+        .icon-lisimoshicaidandaohang{
+        	font-size:24px;
+        }
+    }
+}

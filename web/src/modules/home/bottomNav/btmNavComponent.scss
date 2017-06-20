@@ -1,0 +1,28 @@
+#footer{
+	height:47px;
+	border-top:1px solid #ccc;
+	z-index:100;
+	background:#fff;
+	ul{
+		height:47px;
+		display:flex;
+		li{
+			width:25%;			
+			text-align: center;
+			a{
+				// color:#2F3C51;
+				color:#999;
+			}
+			i{
+				display: block;
+				font-size:22px;
+				height:28px;
+				margin:0;
+				padding:0;
+			}
+		}
+		.bottom_active{
+			color: #f43f4d;
+		}
+	}
+}

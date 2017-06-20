@@ -1,0 +1,16 @@
+.common-top{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    background:#ca0e25;
+    color:#fff;
+    span{
+        font-size: 16px;
+    }
+    .icon-jiantou-copy{
+        position: absolute;
+        left:10px;
+    }
+}

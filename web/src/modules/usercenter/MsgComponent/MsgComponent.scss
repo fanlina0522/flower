@@ -1,0 +1,211 @@
+
+.expressage{
+    height: 100%;
+}
+.mui-content {
+    padding-top: 50px;
+}
+
+.ui-cells {
+    position: relative;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.ui-cell, a.ui-cell {
+    color: #5c5c5c;
+}
+
+.ui-cell-access {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ui-cell-btn, .ui-cell-access {
+    cursor: pointer;
+}
+
+.ui-cell {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 12px 10px 11px 10px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.uc-cells-first{
+	-webkit-box-shadow: 0 1px 6px #ccc;
+}
+
+
+.ui-cell:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    content: '';
+    pointer-events: none;
+    border-bottom:1px solid #efeff4;
+}
+
+.uc-info-ico {
+    width: 30px;
+    line-height: 1;
+    color: #ca0e25;
+
+    .uc-info-ico i {
+	    font-size: 20px;
+	}
+}
+
+
+.flex-col {
+    display: block;
+    width: .1px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.ui-cell-ft {
+    position: relative;
+    font-size: 14px;
+    color: #999;
+}
+
+
+.icon-gender:before {
+    color: rgb(229, 41, 230);
+}
+
+.icon-shengri:before {
+    color: #00ceff;
+}
+
+.uc-cells-first{
+	-webkit-box-shadow: 0 1px 6px #ccc;
+}
+
+.uc-cells{
+	-webkit-box-shadow: 0 1px 6px #ccc;
+}
+
+.icon-weixin:before { color: #24c30f; }
+
+.icon-ordinarymobile:before { color:#000; }
+
+.icon-xiangxidizhi:before { color: #958451;}
+
+.icon-jiantou:before {
+    color: #bbb;
+}
+
+.msgAmend{
+    width: 100%;
+    height:568px;
+    background-color:#fff;
+    position:fixed;
+    top: 0;
+    right:-100%;
+    background-color: #efeff4; 
+}
+
+.msgAmend.active{
+    -webkit-animation: rainbow 0.5s forwards; 
+    animation: rainbow 0.5s forwards;  
+}
+
+.mui-content.active{
+    -webkit-animation: follow 0.5s ; 
+    animation: follow 0.5s ;  
+}
+
+@keyframes follow{
+    0%{
+        left:0
+    }
+    100%{
+        left:-50px
+    }
+}
+
+@keyframes rainbow{
+    80%{
+        right:-5px
+    }
+    90%{
+        right:-2px
+    }
+    100% {
+        right:0;
+    }
+}
+.msgAmend.backbow{
+    right:0;
+    -webkit-animation: backbow 0.5s forwards;  
+}
+
+@keyframes backbow{
+    90%{
+        right:-97%
+    }
+    95%{
+        right:-99%
+    }
+    100% {
+        right:-100%;
+    }
+}
+
+
+.padLeft{
+    padding-left: 28px
+}
+
+
+.genderSel{
+    position: absolute;
+    right: 10px;
+}
+
+.coverbox{
+    height: 100%;
+}
+
+.ad-btn{
+    right:0;
+    margin-top: 4px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42;
+    position: absolute;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    cursor: pointer;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 1px 6px #ccc;
+}

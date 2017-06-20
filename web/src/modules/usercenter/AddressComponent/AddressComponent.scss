@@ -1,0 +1,173 @@
+.Address{
+	height: 100%;
+	background: #efeff4;
+}
+
+.address-form {
+    margin: 10px 0 15px;
+
+    .ui-txtin {
+	    padding-left: 10px;
+	}
+
+	.ui-cell-label {
+	    width: auto;
+	    color: #444;
+	}
+}
+
+.ui-cells {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+
+}
+
+.ui-cell-stable {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 47px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ui-cell {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 12px 10px 11px 10px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+
+    .ui-txtin {
+	    padding: 0;
+	    margin: 0;
+	    height: 24px;
+	    line-height: normal;
+	    font-size: 14px;
+	    border: none;
+	    background: transparent;
+	}
+
+	.mui-icon-clear {
+	    display: block;
+	    margin: 0 -10px 0 10px;
+	    height: 43px;
+	    width: 40px;
+	    line-height: 43px;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #ccc;
+	}
+}
+
+.ui-cell, a.ui-cell {
+    color: #5c5c5c;
+}
+
+.ui-cell:first-child::before {
+    border: 0;
+    background-image: none;
+}
+
+.ui-cell:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    content: '';
+    pointer-events: none;
+}
+
+.address-form .ui-cell-label {
+    width: auto;
+    color: #444;
+}
+
+.ui-cell-label {
+    width: 95px;
+    color: #9e9e9e;
+}
+
+.ui-cell-stable {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 47px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ui-cell:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    content: '';
+    pointer-events: none;
+}
+
+.flex-col {
+    display: block;
+    width: .1px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    border:none;
+}
+
+.ui-switch{
+	input {
+	    position: relative;
+	    display: block;
+	    width: 52px;
+	    height: 28px;
+	    background-color: #fdfdfd;
+	    border-radius: 100px;
+	    -webkit-box-shadow: #dfdfdf 0 0 0 0 inset;
+	    box-shadow: #dfdfdf 0 0 0 0 inset;
+	    border: 1px solid #dfdfdf;
+	    -webkit-appearance: none;
+	    -webkit-transition: border .4s,-webkit-box-shadow .4s;
+	    transition: border .4s,box-shadow .4s;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+
+	.input:before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    content: '';
+	    width: 26px;
+	    height: 26px;
+	    border-radius: 50%;
+	    background-color: #FFFFFF;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	    -webkit-transition: -webkit-transform .3s;
+	    transition: -webkit-transform .3s;
+	    transition: transform .3s;
+	    transition: transform .3s, -webkit-transform .3s;
+	}
+}
+
+.ui-border-t, .ui-cell:before, .ui-box:before, .ui-list .item, .mui-bar-tab, .detail-action-bar:before, .oc-panel .panel-bd:after {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 0;
+}
+
+.mui-switch{
+	transition-duration: 0.2s;
+}
+
+.mui-switch-handle{
+	transition-duration: 0.2s; transform: translate(0px, 0px)
+}
